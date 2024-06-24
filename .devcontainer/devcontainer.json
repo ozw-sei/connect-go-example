@@ -1,0 +1,23 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/guiyomh/features/golangci-lint:0": {}
+  },
+  "forwardPorts": [
+    8080
+  ],
+  "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "golang.Go",
+        "EditorConfig.EditorConfig",
+        "bungcip.better-toml",
+        "plex.vscode-protolint"
+      ]
+    }
+  }
+}
